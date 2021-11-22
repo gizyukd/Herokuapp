@@ -8,7 +8,7 @@ import static org.testng.Assert.*;
 
 public class CheckboxesTest extends BaseTest{
     @Test
-    public void checkboxes(){
+    public void checkChangingStateOfCheckboxes(){
         driver.get("http://the-internet.herokuapp.com/checkboxes");
         List<WebElement> checkboxes = driver.findElements(By.cssSelector("[type=checkbox]"));
         assertFalse(checkboxes.get(0).isSelected(), "Чекбокс 1 активирован");
