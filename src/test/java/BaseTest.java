@@ -15,7 +15,6 @@ public class BaseTest {
     WebDriver driver;
     WebDriverWait wait;
 
-
     @BeforeMethod
     public void setUp(){
         WebDriverManager.chromedriver().setup();
