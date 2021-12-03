@@ -16,7 +16,7 @@ public class FileUploadTest extends BaseTest{
 
         driver.findElement(By.id("file-submit")).click();
         assertEquals(driver.findElement(By.xpath("//div[@class='example']/h3")).getText(), "File Uploaded!", "Файл не загружен");
-        assertNotEquals(driver.findElement(By.id("uploaded-files")).getText(), file.getName(), "Отображено неверное имя загруженного файла");
+        assertEquals(driver.findElement(By.id("uploaded-files")).getText(), file.getName(), "Отображено неверное имя загруженного файла");
     }
 
 }
